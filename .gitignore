@@ -1,0 +1,22 @@
+target/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+.m2repo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Runtime artifacts
+transaction-logs/
+*.log
+logs/
+
+# Java build outputs
+*.class
