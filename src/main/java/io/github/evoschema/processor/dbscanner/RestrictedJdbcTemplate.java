@@ -7,7 +7,12 @@ public class RestrictedJdbcTemplate extends AbstractGuardedJdbcTemplate
 {
     public RestrictedJdbcTemplate(DataSource dataSource, String context)
     {
-        super(dataSource, context);
+        this(dataSource, context, "<unknown>");
+    }
+
+    public RestrictedJdbcTemplate(DataSource dataSource, String context, String dataSourceKey)
+    {
+        super(dataSource, context, dataSourceKey);
     }
 
     @Override

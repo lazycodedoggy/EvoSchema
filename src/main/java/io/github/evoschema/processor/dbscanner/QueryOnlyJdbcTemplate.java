@@ -7,7 +7,12 @@ public class QueryOnlyJdbcTemplate extends AbstractGuardedJdbcTemplate
 {
     public QueryOnlyJdbcTemplate(DataSource dataSource, String context)
     {
-        super(dataSource, context);
+        this(dataSource, context, "<unknown>");
+    }
+
+    public QueryOnlyJdbcTemplate(DataSource dataSource, String context, String dataSourceKey)
+    {
+        super(dataSource, context, dataSourceKey);
     }
 
     @Override

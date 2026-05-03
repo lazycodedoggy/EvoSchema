@@ -1,8 +1,25 @@
 # EvoSchema
 
-EvoSchema is a phase-based database evolution runner (Pre-DDL / DML / Assert / Post-DDL) for code-driven schema and data changes across one or more datasources.
+[![CI](https://github.com/lazycodedoggy/EvoSchema/actions/workflows/ci.yml/badge.svg)](https://github.com/lazycodedoggy/EvoSchema/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/lazycodedoggy/EvoSchema)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0-blue)](pom.xml)
+
+EvoSchema is a code-driven database migration framework for microservices architectures, designed to ensure operational safety during major release rollouts.
+
+It uses a phase-based execution model (Pre-DDL → DML / Script → Assert → Post-DDL) to manage schema and data evolution across one or more datasources, with built-in SQL guardrails, multi-datasource coordination (JTA/XA), and developer-defined rollback strategies.
 
 It focuses on operational safety for major releases: explicit ordering, developer-defined compensation SQL for limited rollback, and SQL guardrails (DML-only, DML+query, query-only) to reduce accidental misuse.
+
+> New here? Start with the guided demo: [Getting Started With TutorialOrderSyncDemo](docs/getting-started-tutorial-order-sync.md)
+
+Quick links:
+
+- [Getting Started With TutorialOrderSyncDemo](docs/getting-started-tutorial-order-sync.md)
+- [Chinese README](README.zh-CN.md)
+- [TutorialOrderSyncDemo.java](src/test/java/io/github/evoschema/dbscript/TutorialOrderSyncDemo.java)
+- [TutorialOrderSyncDemoTest.java](src/test/java/io/github/evoschema/TutorialOrderSyncDemoTest.java)
+
+![EvoSchema overview](assets/proj_desc.png)
 
 ## What It Solves
 
