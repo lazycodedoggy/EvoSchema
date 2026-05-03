@@ -1,6 +1,5 @@
 # EvoSchema
 
-[![CI](https://github.com/lazycodedoggy/EvoSchema/actions/workflows/ci.yml/badge.svg)](https://github.com/lazycodedoggy/EvoSchema/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/lazycodedoggy/EvoSchema)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0-blue)](pom.xml)
 
